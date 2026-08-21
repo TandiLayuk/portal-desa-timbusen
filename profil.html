@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil & Sejarah - Desa Timbuseng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .bg-success-custom { background-color: #0d5c3a !important; }
+        .text-success-custom { color: #0d5c3a !important; }
+        .hero-profil {
+            background: linear-gradient(rgba(13, 92, 58, 0.85), rgba(13, 92, 58, 0.95)), 
+                        url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0 60px;
+        }
+        .timeline {
+            border-left: 3px solid #0d5c3a;
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 25px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -27px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ffc107;
+            border: 2px solid #0d5c3a;
+        }
+        .map-container {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success-custom sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-landmark me-2"></i>DESA TIMBUSENG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="profil.html">Profil & Sejarah</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#berita">Kegiatan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#umkm">Lapak UMKM</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-warning text-dark px-3 ms-lg-2 fw-bold" href="admin.html"><i class="fas fa-user-lock me-1"></i> Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Profil -->
+    <section class="hero-profil text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-2">Profil & Sejarah Desa</h1>
+            <p class="lead text-light mb-0">Mengenal Lebih Dekat Asal-Usul, Silsilah Kepemimpinan, dan Geografis Desa Timbuseng</p>
+        </div>
+    </section>
+
+    <!-- Identitas Singkat Desa -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <h3 class="fw-bold text-success-custom mb-3"><i class="fas fa-info-circle me-2"></i>Identitas Wilayah</h3>
+                    <table class="table table-striped table-bordered bg-white shadow-sm">
+                        <tbody>
+                            <tr><th width="40%">Nama Desa</th><td>Timbuseng</td></tr>
+                            <tr><th>Kecamatan</th><td>Polongbangkeng Timur (Perda No 1/2022)</td></tr>
+                            <tr><th>Kabupaten</th><td>Takalar</td></tr>
+                            <tr><th>Provinsi</th><td>Sulawesi Selatan</td></tr>
+                            <tr><th>Kode Pos</th><td>92221</td></tr>
+                            <tr><th>Kode Kemendagri</th><td>73.05.11.2006</td></tr>
+                            <tr><th>Kepala Desa Aktif</th><td><strong>Kaharuddin</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm p-4 bg-success-custom text-white">
+                        <h4 class="fw-bold text-warning mb-3"><i class="fas fa-bullseye me-2"></i>Visi & Misi Desa</h4>
+                        <p class="mb-2"><strong>Visi:</strong> Mewujudkan Desa Timbuseng yang Sejahtera, Mandiri, Transparan, dan Berdaya Saing Berbasis Pertanian dan UMKM Digital.</p>
+                        <hr class="border-light my-3">
+                        <p class="mb-0"><strong>Misi Utama:</strong> Mendorong transparansi layanan publik (*Smart Village*), pengembangan ekonomi lokal berbasis tebu & olahan warga, serta peningkatan infrastruktur di 7 dusun.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sejarah Desa & Asal-Usul -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <h3 class="fw-bold text-success-custom mb-3"><i class="fas fa-history me-2"></i>Asal-Usul & Sejarah Desa</h3>
+                    <p class="text-justify">
+                        Nama <strong>"Timbuseng"</strong> berasal dari istilah bahasa lokal yang merujuk pada mata air atau sumber air yang terus memancar/timbul dari dalam tanah dan tidak pernah kering. Keberadaan sumber air ini dahulu menjadi tumpuan utama kehidupan masyarakat pedalaman dalam bercocok tanam dan memenuhi kebutuhan hidup sehari-hari.
+                    </p>
+                    <p class="text-justify">
+                        Secara historis tata pemerintahan, Desa Timbuseng merupakan wilayah pemekaran dari <strong>Desa Ko'mara</strong>. Pemekaran ini dilakukan guna memperdekat jarak pelayanan administrasi publik dan mempercepat pembangunan kemasyarakatan mengingat wilayah geografis yang semakin berkembang.
+                    </p>
+                    <p class="text-justify">
+                        Pada akhir tahun 2022, berdasarkan <strong>Peraturan Daerah Kabupaten Takalar Nomor 1 Tahun 2022</strong>, Desa Timbuseng yang semula berada di bawah Kecamatan Polongbangkeng Utara secara resmi masuk ke dalam wilayah administrasi kecamatan baru, yaitu <strong>Kecamatan Polongbangkeng Timur</strong>, dengan pusat koordinasi terpusat di Desa Ko'mara.
+                    </p>
+                </div>
+
+                <!-- Silsilah Kepemimpinan -->
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-sm p-4">
+                        <h4 class="fw-bold text-success-custom mb-4"><i class="fas fa-users-cog me-2"></i>Silsilah Kepala Desa</h4>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h6 class="fw-bold mb-1">Periode Pemekaran Awal</h6>
+                                <p class="text-muted small mb-0">Perintis kepemimpinan saat pemisahan wilayah dari Desa Ko'mara.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h6 class="fw-bold mb-1">Periode Kepemimpinan Sebelumnya</h6>
+                                <p class="text-muted small mb-0">Melanjutkan peletakan fondasi pembangunan fisik dan wilayah pertanian desa.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h6 class="fw-bold text-success mb-1">Kaharuddin (Kepala Desa Aktif)</h6>
+                                <span class="badge bg-success mb-2">Periode Saat Ini</span>
+                                <p class="text-muted small mb-0">Memimpin transformasi digital desa (*Smart Village*), pemberdayaan UMKM, dan optimalisasi potensi pertanian tebu serta peternakan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Peta Wilayah & 7 Dusun -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-success-custom"><i class="fas fa-map-marked-alt me-2"></i>Peta & Wilayah 7 Dusun</h2>
+                <p class="text-muted">Desa Timbuseng terbagi ke dalam 7 wilayah dusun administrasi</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-3 border-start border-4 border-success">
+                        <h5 class="fw-bold mb-1">1. Dusun Timbuseng</h5>
+                        <small class="text-muted mb-2 d-block">Pusat Pemukiman & Kantor Desa</small>
+                        <p class="small text-secondary mb-0"><i class="fas fa-map-pin text-danger me-1"></i>Pusat koordinasi pemerintahan dan fasilitas publik utama.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-3 border-start border-4 border-success">
+                        <h5 class="fw-bold mb-1">2. Dusun Sauleya</h5>
+                        <small class="text-muted mb-2 d-block">Wilayah Pendidikan & Posyandu</small>
+                        <p class="small text-secondary mb-0"><i class="fas fa-school text-primary me-1"></i>Lokasi SDN 53 Saolea & KB Miftahuljannah.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-3 border-start border-4 border-success">
+                        <h5 class="fw-bold mb-1">3. Dusun Tanasambayang</h5>
+                        <small class="text-muted mb-2 d-block">Wilayah Pertanian Pangan</small>
+                        <p class="small text-secondary mb-0"><i class="fas fa-graduation-cap text-warning me-1"></i>Lokasi UPT SDN 173 Inpres Tanasambayang.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-3 border-start border-4 border-success">
+                        <h5 class="fw-bold mb-1">4. Dusun Panaikang 1</h5>
+                        <small class="text-muted mb-2 d-block">Kawasan Perkebunan Tebu</small>
+                        <p class="small text-secondary mb-0"><i class="fas fa-seedling text-success me-1"></i>Penyuplai komoditas tebu ke Pabrik Gula Takalar.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-3 border-start border-4 border-success">
+                        <h5 class="fw-bold mb-1">5. Dusun Panaikang 2</h5>
+                        <small class="text-muted mb-2 d-block">Kawasan Pemukiman & Peternakan</small>
+                        <p class="small text-secondary mb-0"><i class="fas fa-paw text-info me-1"></i>Pusat pengembangan teknologi biogas kotoran ternak sapi.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-3 border-start border-4 border-success">
+                        <h5 class="fw-bold mb-1">6. Dusun Bontobaddo</h5>
+                        <small class="text-muted mb-2 d-block">Wilayah Perbukitan Subur</small>
+                        <p class="small text-secondary mb-0"><i class="fas fa-mountain text-secondary me-1"></i>Area persawahan swadaya padi & jagung warga.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-3 border-start border-4 border-warning bg-warning-subtle">
+                        <h5 class="fw-bold mb-1">7. Dusun Satelit Pendukung</h5>
+                        <small class="text-muted mb-2 d-block">Wilayah Perluasan Administrasi</small>
+                        <p class="small text-secondary mb-0"><i class="fas fa-layer-group text-warning me-1"></i>Dusun pendukung cakupan pelayanan wilayah desa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Embed Peta Google Maps Polongbangkeng Timur -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31780.252445173166!2d119.55000000000001!3d-5.383333300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee21f6b5f47bd%3A0x2a21e64bfca1a941!2sTimbuseng%2C%20Kec.%20Polongbangkeng%20Utara%2C%20Kabupaten%20Takalar%2C%20Sulawesi%20Selatan!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-success-custom text-white py-4">
+        <div class="container text-center">
+            <h5 class="fw-bold mb-1">Pemerintah Desa Timbuseng</h5>
+            <p class="small mb-2">Kecamatan Polongbangkeng Timur, Kabupaten Takalar, Sulawesi Selatan (92221)</p>
+            <hr class="border-secondary my-3">
+            <p class="small mb-0">&copy; 2026 Portal Resmi Desa Timbuseng. Managed by Mahasiswa KKN Posko 10.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

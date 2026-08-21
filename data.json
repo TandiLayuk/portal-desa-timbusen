@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "judul": "Selamat Datang di Portal Resmi Desa Timbuseng",
+    "subjudul": "Pusat Informasi Publik, Profil Wilayah, Potensi UMKM, dan Layanan Digital Warga Kecamatan Polongbangkeng Timur, Kabupaten Takalar."
+  },
+  "profil": {
+    "nama_desa": "Timbuseng",
+    "kecamatan": "Polongbangkeng Timur",
+    "kabupaten": "Takalar",
+    "provinsi": "Sulawesi Selatan",
+    "kode_pos": "92221",
+    "kode_kemendagri": "73.05.11.2006",
+    "kepala_desa": "Kaharuddin"
+  },
+  "statistik": {
+    "dusun": "7 Dusun",
+    "penduduk": "3.450 Jiwa",
+    "kk": "890 KK",
+    "umkm": "12 Usaha"
+  },
+  "berita": [
+    {
+      "id": 1,
+      "judul": "Seminar Motivasi Kewirausahaan UMKM Desa",
+      "kategori": "Ekonomi",
+      "tanggal": "08 September 2026",
+      "ringkasan": "Menghadirkan pemateri praktisi Arifuddin Alwi (Owner Donat Kampa) untuk mendorong kemandirian ekonomi warga Timbuseng.",
+      "gambar": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=600&auto=format&fit=crop"
+    },
+    {
+      "id": 2,
+      "judul": "Pengadaan Penanda Rumah Perangkat Desa Ber-QR Code",
+      "kategori": "Smart Village",
+      "tanggal": "13 September 2026",
+      "ringkasan": "Pemasangan plang fisik rumah Kadus & Perangkat Desa yang terintegrasi dengan profil digital pelayanan masyarakat.",
+      "gambar": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=600&auto=format&fit=crop"
+    }
+  ],
+  "umkm": [
+    {
+      "id": 1,
+      "nama_produk": "Olahan Gula Merah Tebu Asli",
+      "pemilik": "Ibu Rahmawati",
+      "dusun": "Dusun Timbuseng",
+      "harga": "15000",
+      "whatsapp": "6281234567890",
+      "deskripsi": "Gula merah murni hasil olahan tebu segar pilihan tanpa bahan pengawet sintesis.",
+      "gambar": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?q=80&w=600&auto=format&fit=crop"
+    },
+    {
+      "id": 2,
+      "nama_produk": "Donat & Kue Tradisional",
+      "pemilik": "Pak Syamsuddin",
+      "dusun": "Dusun Sauleya",
+      "harga": "10000",
+      "whatsapp": "6282198765432",
+      "deskripsi": "Aneka kue jajanan pasar dan donat lembut buatan rumahan warga lokal.",
+      "gambar": "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=600&auto=format&fit=crop"
+    }
+  ],
+  "dusun_list": [
+    "Dusun Timbuseng",
+    "Dusun Sauleya",
+    "Dusun Tanasambayang",
+    "Dusun Panaikang 1",
+    "Dusun Panaikang 2",
+    "Dusun Bontobaddo",
+    "Dusun Satelit"
+  ]
+}
